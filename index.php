@@ -1,4 +1,9 @@
 <?php
+require 'tracy/tracy.phar';
+use Tracy\Debugger;
+Debugger::enable();
+Debugger::$strictMode = true;
+
 echo 896;
 echo"<br>";
 print (3.14);
@@ -18,7 +23,7 @@ $b = 8;
 
 echo "<br>";
 
-var_dump ($a + $b);
+dump ($a + $b);
 
 echo "<br>";
 
@@ -26,7 +31,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a - $b);
+dump ($a - $b);
 
 echo "<br>";
 
@@ -34,7 +39,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a / $b);
+dump ($a / $b);
 
 echo "<br>";
 
@@ -42,7 +47,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a * $b);
+dump ($a * $b);
 
 echo "<br>";
 
@@ -50,7 +55,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
             
-var_dump ($a += $b);
+dump ($a += $b);
 
 echo "<br>";
 
@@ -66,7 +71,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a *= $b);
+dump ($a *= $b);
 
 echo "<br>";
 
@@ -74,7 +79,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a /= $b);
+dump ($a /= $b);
 
 echo "<br>";
 
@@ -82,7 +87,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a == $b);
+dump ($a == $b);
 
 echo "<br>";
 
@@ -90,7 +95,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a != $b);
+dump ($a != $b);
 
 echo "<br>";
 
@@ -98,7 +103,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a > $b);
+dump ($a > $b);
 
 echo "<br>";
 
@@ -106,7 +111,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a < $b);
+dump ($a < $b);
 
 echo "<br>";
 
@@ -114,7 +119,7 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a || $b);
+dump ($a || $b);
 
 echo "<br>";
            
@@ -122,6 +127,6 @@ $a = 40;
 echo"<br>";
 $b = 8;
 
-var_dump ($a && $b);
+dump ($a && $b);
 
 ?>
